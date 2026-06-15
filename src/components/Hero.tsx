@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import WordsPullUp from './WordsPullUp'
 
-const navItems = ['Our story', 'Collective', 'Workshops', 'Programs', 'Inquiries']
+const navItems = ['Story', 'Collective', 'Workshops', 'Programs', 'Inquiries']
 
 export default function Hero() {
   return (
