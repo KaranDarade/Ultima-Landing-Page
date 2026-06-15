@@ -9,11 +9,13 @@ const features = [
     number: '',
     items: [],
     iconUrl: '',
+    bgImageUrl: '',
   },
   {
     title: 'Project Storyboard.',
     number: '01',
     iconUrl: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171918_4a5edc79-d78f-4637-ac8b-53c43c220606.png&w=1280&q=85',
+    bgImageUrl: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171918_4a5edc79-d78f-4637-ac8b-53c43c220606.png&w=1280&q=85',
     items: [
       'Drag-and-drop timeline editor',
       'Real-time collaboration tools',
@@ -25,6 +27,7 @@ const features = [
     title: 'Smart Critiques.',
     number: '02',
     iconUrl: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171741_ed9845ab-f5b2-4018-8ce7-07cc01823522.png&w=1280&q=85',
+    bgImageUrl: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171741_ed9845ab-f5b2-4018-8ce7-07cc01823522.png&w=1280&q=85',
     items: [
       'AI-powered scene analysis',
       'Contextual creative notes',
@@ -35,6 +38,7 @@ const features = [
     title: 'Immersion Capsule.',
     number: '03',
     iconUrl: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171809_f56666dc-c099-4778-ad82-9ad4f209567b.png&w=1280&q=85',
+    bgImageUrl: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171809_f56666dc-c099-4778-ad82-9ad4f209567b.png&w=1280&q=85',
     items: [
       'Distraction-free mode',
       'Ambient soundscapes',
@@ -66,7 +70,7 @@ export default function Features() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:h-[480px] gap-3 sm:gap-2 md:gap-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
           {features.map((f, i) => (
             <FeatureCard
               key={i}
@@ -77,6 +81,7 @@ export default function Features() {
               items={f.items}
               imageUrl={f.imageUrl}
               iconUrl={f.iconUrl}
+              bgImageUrl={f.bgImageUrl}
             />
           ))}
         </div>
