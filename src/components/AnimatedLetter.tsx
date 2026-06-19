@@ -12,7 +12,7 @@ function CharSpan({ char, scrollYProgress, start, end }: CharSpanProps) {
   const opacity = useTransform(scrollYProgress, [start, end], [0.2, 1])
   return (
     <motion.span style={{ opacity }}>
-      {char === ' ' ? '\u00A0' : char}
+      {char}
     </motion.span>
   )
 }

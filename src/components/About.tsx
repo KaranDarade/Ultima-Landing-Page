@@ -17,10 +17,10 @@ export default function About() {
           />
         </div>
 
-        <div className="mt-8 md:mt-10 lg:mt-12 max-w-2xl mx-auto">
+        <div className="mt-8 md:mt-10 lg:mt-12 max-w-2xl mx-auto px-2 sm:px-4">
           <AnimatedLetter
-            text="Over the last seven years, I have worked with Parallax, a Berlin-based production house that crafts cinema, series, and Noir Studio in Paris. Together, we have created work that has earned international acclaim at several major festivals."
-            className="text-xs sm:text-sm md:text-base leading-relaxed"
+            text="Over the past decade, I have collaborated with award-winning studios across Europe and Asia — crafting visuals for campaigns, short films, and immersive installations. Every project is a chance to push storytelling beyond the expected."
+            className="text-xs sm:text-sm md:text-base leading-relaxed text-left sm:text-center break-words"
             style={{ color: '#DEDBC8' }}
           />
         </div>
